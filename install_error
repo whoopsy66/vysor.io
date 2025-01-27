@@ -1,0 +1,1495 @@
+2024-06-18 15:56:10> Program: Starting Squirrel Updater: --install .
+2024-06-18 15:56:10> Program: Starting install, writing to C:\Users\jeravels\AppData\Local\SquirrelTemp
+2024-06-18 15:56:10> Program: About to install to: C:\Users\jeravels\AppData\Local\vysor
+2024-06-18 15:56:10> CheckForUpdateImpl: Couldn't write out staging user ID, this user probably shouldn't get beta anything: System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Users\jeravels\AppData\Local\vysor\packages\.betaId'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamWriter.CreateFile(String path, Boolean append, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize, Boolean checkHost)
+   at System.IO.File.InternalWriteAllText(String path, String contents, Encoding encoding, Boolean checkHost)
+   at System.IO.File.WriteAllText(String path, String contents, Encoding encoding)
+   at Squirrel.UpdateManager.CheckForUpdateImpl.getOrCreateStagedUserId()
+2024-06-18 15:56:10> CheckForUpdateImpl: Failed to load local releases, starting from scratch: System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Users\jeravels\AppData\Local\vysor\packages\RELEASES'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at Squirrel.Utility.LoadLocalReleases(String localReleaseFile)
+   at Squirrel.UpdateManager.CheckForUpdateImpl.<CheckForUpdate>d__2.MoveNext()
+2024-06-18 15:56:10> CheckForUpdateImpl: Reading RELEASES file from C:\Users\jeravels\AppData\Local\SquirrelTemp
+2024-06-18 15:56:10> CheckForUpdateImpl: First run or local directory is corrupt, starting from scratch
+2024-06-18 15:56:12> ApplyReleasesImpl: Writing files to app directory: C:\Users\jeravels\AppData\Local\vysor\app-5.0.7
+2024-06-18 15:56:18> LogHost: Rigging execution stub for Vysor_ExecutionStub.exe to C:\Users\jeravels\AppData\Local\vysor\Vysor.exe
+2024-06-18 15:56:25> ApplyReleasesImpl: Squirrel Enabled Apps: [C:\Users\jeravels\AppData\Local\vysor\app-5.0.7\Vysor.exe]
+2024-06-18 15:56:33> ApplyReleasesImpl: Starting fixPinnedExecutables
+2024-06-18 15:56:33> ApplyReleasesImpl: Examining Pin: File Explorer.lnk
+2024-06-18 15:56:33> ApplyReleasesImpl: Examining Pin: Microsoft Edge.lnk
+2024-06-18 15:56:33> ApplyReleasesImpl: Fixing up tray icons
+2024-06-18 15:56:33> ApplyReleasesImpl: cleanDeadVersions: for version 5.0.7
+2024-06-18 15:56:33> ApplyReleasesImpl: cleanDeadVersions: exclude folder app-5.0.7
+2024-11-11 15:33:25> LogHost: Write failed.
+2024-11-11 15:33:25> LogHost: Message: Valid SendTelemetry key value found at Software\Policies\Microsoft\Office\Common\ClientTelemetry, value 3.
+2024-11-11 15:33:26> LogHost: Stack trace: System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Users\jeravels\AppData\Roaming\Microsoft\Teams\SquirrelTelemetry.log'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamWriter.CreateFile(String path, Boolean append, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append)
+   at Telemetry.AriaWrapper.LogToFile(String message)
+2024-11-11 15:33:26> Program: Starting Squirrel Updater: --install . --exeName=MSTeamsSetup.exe --bootstrapperMode
+2024-11-11 15:33:26> RegistryService: TryDeleteRegKey: HKEY_CURRENT_USER\Software\Microsoft\Office\Teams\AcquireSource not found
+2024-11-11 15:33:26> RegistryService: RegKeyExists: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\Teams\ does not exist
+2024-11-11 15:33:27> LogHost: Write failed.
+2024-11-11 15:33:27> LogHost: Message: Scenario.Status: success, scenario: 99bdd7f0-9646-4822-b207-796514c4de5b, Scenario.Name: desktop_squirrel_stubinstall, Scenario.Step: start, sequence: 0, appversion: , platformId: 27, DeviceInfo.OsName: Windows, DeviceInfo.CpuArchitecture: x64, DeviceInfo.OsVersion: 10.0.22621.0, AppInfo.ProcessArchitecture: x86, AppInfo.ClientType: desktop, dllSearchPathState: unset, clientType: desktop, source: exe, distSrc: default, breadcrumb: , SignedPackages: enabled, desktopSession: desktop-ab401645-fd5e-4f49-852a-265377bea790, installSessionId: 3574b5afccbcbcb5207cf4bd7e599b7d7163cc5fb32c4e3f71b632bb0b852c04, delta: 16, scenarioDelta: 16, elapsed: 1731335606213, stepDelta: 0, DeviceInfo.ComputerUuid: 4c4c4544004e51108050c7c04f503133, DeviceInfo.OfficeMachineId: 79c42a6b6d81694b9d82323fc9654b9a, InstallerVersion: 3.3.19.0, eventpdclevel: 1, userpdclevel: 3
+2024-11-11 15:33:27> LogHost: Stack trace: System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Users\jeravels\AppData\Roaming\Microsoft\Teams\SquirrelTelemetry.log'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamWriter.CreateFile(String path, Boolean append, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append)
+   at Telemetry.AriaWrapper.LogToFile(String message)
+2024-11-11 15:33:27> Program: bootStrapperModeSettings: pdsEndpoint:https://teams.microsoft.com/desktopclient/installer/windows/
+2024-11-11 15:33:27> Program: bootStrapperModeSettings: fallbackNextGenAppPayloadUrlX64:https://aka.ms/maglev-x64
+2024-11-11 15:33:27> Program: bootStrapperModeSettings: fallbackNextGenAppPayloadUrlX86:https://aka.ms/maglev-x86
+2024-11-11 15:33:27> Program: bootStrapperModeSettings: fallbackNextGenAppPayloadUrlARM64:https://aka.ms/maglev-arm64
+2024-11-11 15:33:27> Program: bootStrapperModeSettings: getInstallerEndpointUrl:https://teams.live.com/downloads/getinstaller
+2024-11-11 15:33:27> Program: bootStrapperModeSettings: fallbackNextGenWorkAppPayloadUrlX64:https://go.microsoft.com/fwlink/?linkid=2196106
+2024-11-11 15:33:27> Program: bootStrapperModeSettings: fallbackNextGenWorkAppPayloadUrlX86:https://go.microsoft.com/fwlink/?linkid=2196060
+2024-11-11 15:33:27> Program: bootStrapperModeSettings: fallbackNextGenWorkAppPayloadUrlARM64:https://go.microsoft.com/fwlink/?linkid=2196207
+2024-11-11 15:33:27> RegistryService: TryGetRegKey: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\CurrentBuildNumber exists. Data - 22621
+2024-11-11 15:33:27> RegistryService: TryGetRegKey: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\CurrentMajorVersionNumber exists. Data - 10
+2024-11-11 15:33:27> RegistryService: TryGetRegKey: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\CurrentMinorVersionNumber exists. Data - 0
+2024-11-11 15:33:27> RegistryService: TryGetRegKey: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\CurrentBuildNumber exists. Data - 22621
+2024-11-11 15:33:27> LogHost: Write failed.
+2024-11-11 15:33:27> LogHost: Message: DownloadUrlRetry: 0, endpointUrl: https://teams.live.com/downloads/getinstaller?arch=x64&platVersion=10.0.22621, Scenario.Status: success, scenario: 99bdd7f0-9646-4822-b207-796514c4de5b, Scenario.Name: desktop_squirrel_stubinstall, Scenario.Step: download_url_start, sequence: 1, appversion: , platformId: 27, DeviceInfo.OsName: Windows, DeviceInfo.CpuArchitecture: x64, DeviceInfo.OsVersion: 10.0.22621.0, AppInfo.ProcessArchitecture: x86, AppInfo.ClientType: desktop, dllSearchPathState: unset, clientType: desktop, source: exe, distSrc: default, breadcrumb: , SignedPackages: enabled, desktopSession: desktop-ab401645-fd5e-4f49-852a-265377bea790, installSessionId: 3574b5afccbcbcb5207cf4bd7e599b7d7163cc5fb32c4e3f71b632bb0b852c04, delta: 1725, scenarioDelta: 1725, elapsed: 1731335607922, stepDelta: 1709, DeviceInfo.ComputerUuid: 4c4c4544004e51108050c7c04f503133, DeviceInfo.OfficeMachineId: 79c42a6b6d81694b9d82323fc9654b9a, InstallerVersion: 3.3.19.0, eventpdclevel: 1, userpdclevel: 3
+2024-11-11 15:33:27> LogHost: Stack trace: System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Users\jeravels\AppData\Roaming\Microsoft\Teams\SquirrelTelemetry.log'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamWriter.CreateFile(String path, Boolean append, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append)
+   at Telemetry.AriaWrapper.LogToFile(String message)
+2024-11-11 15:33:28> FileDownloader: Downloading url: https://teams.live.com/downloads/getinstaller?arch=x64&platVersion=10.0.22621
+2024-11-11 15:33:29> LogHost: Write failed.
+2024-11-11 15:33:29> LogHost: Message: DownloadUrlRetry: 0, endpointUrl: https://teams.live.com/downloads/getinstaller?arch=x64&platVersion=10.0.22621, sizeInBytes: 134, Scenario.Status: success, scenario: 99bdd7f0-9646-4822-b207-796514c4de5b, Scenario.Name: desktop_squirrel_stubinstall, Scenario.Step: download_url_end, sequence: 2, appversion: , platformId: 27, DeviceInfo.OsName: Windows, DeviceInfo.CpuArchitecture: x64, DeviceInfo.OsVersion: 10.0.22621.0, AppInfo.ProcessArchitecture: x86, AppInfo.ClientType: desktop, dllSearchPathState: unset, clientType: desktop, source: exe, distSrc: default, breadcrumb: , SignedPackages: enabled, desktopSession: desktop-eeee418c-e93a-40a0-ba60-84704edcaf2c, installSessionId: 3574b5afccbcbcb5207cf4bd7e599b7d7163cc5fb32c4e3f71b632bb0b852c04, delta: 3117, scenarioDelta: 3117, elapsed: 1731335609314, stepDelta: 1392, DeviceInfo.ComputerUuid: 4c4c4544004e51108050c7c04f503133, DeviceInfo.OfficeMachineId: 79c42a6b6d81694b9d82323fc9654b9a, InstallerVersion: 3.3.19.0, eventpdclevel: 1, userpdclevel: 3
+2024-11-11 15:33:29> LogHost: Stack trace: System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Users\jeravels\AppData\Roaming\Microsoft\Teams\SquirrelTelemetry.log'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamWriter.CreateFile(String path, Boolean append, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append)
+   at Telemetry.AriaWrapper.LogToFile(String message)
+2024-11-11 15:33:29> BootstrapperInstallManager: getinstaller endpoint returned installer path https://statics.teams.cdn.office.net/production-windows-x64/1.7.00.19353/
+2024-11-11 15:33:29> BootstrapperInstallManager: No decoded deep link is returned from get installer endpoint. Continue install without deep link
+2024-11-11 15:33:29> BootstrapperInstallManager: Use next gen work app
+2024-11-11 15:33:29> Program: Installing the Teams 2 client
+2024-11-11 15:33:50> LogHost: Write failed.
+2024-11-11 15:33:50> LogHost: Message: arch: x64, platVersion: 10.0.22621, DownloadUrlRetry: 0, IsNextGenLink: False, InstallerUrlFromCloud: https://statics.teams.cdn.office.net/production-windows-x64/1.7.00.19353/, Scenario.Status: failure, scenario: 340731b5-2e09-4f90-9a98-c6f3c84e89d7, Scenario.Name: desktop_squirrel_stubinstall, Scenario.Step: stop, sequence: 3, appversion: , platformId: 27, DeviceInfo.OsName: Windows, DeviceInfo.CpuArchitecture: x64, DeviceInfo.OsVersion: 10.0.22621.0, AppInfo.ProcessArchitecture: x86, AppInfo.ClientType: desktop, dllSearchPathState: unset, clientType: desktop, source: exe, distSrc: default, breadcrumb: dud;t2ib;t2lab;t2las;t2if;, SignedPackages: enabled, desktopSession: desktop-eeee418c-e93a-40a0-ba60-84704edcaf2c, installSessionId: 3574b5afccbcbcb5207cf4bd7e599b7d7163cc5fb32c4e3f71b632bb0b852c04, delta: 23998, scenarioDelta: 23998, elapsed: 1731335630195, stepDelta: 20881, DeviceInfo.ComputerUuid: 4c4c4544004e51108050c7c04f503133, DeviceInfo.OfficeMachineId: 79c42a6b6d81694b9d82323fc9654b9a, InstallerVersion: 3.3.19.0, eventpdclevel: 1, userpdclevel: 3
+2024-11-11 15:33:50> LogHost: Stack trace: System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Users\jeravels\AppData\Roaming\Microsoft\Teams\SquirrelTelemetry.log'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamWriter.CreateFile(String path, Boolean append, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append)
+   at Telemetry.AriaWrapper.LogToFile(String message)
+2024-11-11 15:33:50> Unhandled exception: System.AggregateException: One or more errors occurred. ---> System.ComponentModel.Win32Exception: The application is exiting and cannot service this request
+   at System.Diagnostics.Process.StartWithShellExecuteEx(ProcessStartInfo startInfo)
+   at System.Diagnostics.Process.Start()
+   at System.Diagnostics.Process.Start(ProcessStartInfo startInfo)
+   at Squirrel.DefaultProcess.Start(ProcessStartInfo info)
+   at Squirrel.Teams2Client.LaunchT2WithDeepLink(String deeplink)
+   at Squirrel.Teams2Client.InstallAndLaunch(BootstrapperInstallOptions options, Action uxAction)
+   at Squirrel.Update.Program.<Install>d__12.MoveNext()
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at Squirrel.Update.Program.executeCommandLine(String[] args)
+   at Squirrel.Update.Program.main(String[] args)
+---> (Inner Exception #0) System.ComponentModel.Win32Exception (0x80004005): The application is exiting and cannot service this request
+   at System.Diagnostics.Process.StartWithShellExecuteEx(ProcessStartInfo startInfo)
+   at System.Diagnostics.Process.Start()
+   at System.Diagnostics.Process.Start(ProcessStartInfo startInfo)
+   at Squirrel.DefaultProcess.Start(ProcessStartInfo info)
+   at Squirrel.Teams2Client.LaunchT2WithDeepLink(String deeplink)
+   at Squirrel.Teams2Client.InstallAndLaunch(BootstrapperInstallOptions options, Action uxAction)
+   at Squirrel.Update.Program.<Install>d__12.MoveNext()<---
+
+2025-01-24 10:01:29> Program: Starting Squirrel Updater: --install . --exeName=MSTeamsSetup (2).exe --bootstrapperMode
+2025-01-24 10:01:29> RegistryService: TryDeleteRegKey: HKEY_CURRENT_USER\Software\Microsoft\Office\Teams\AcquireSource not found
+2025-01-24 10:01:29> RegistryService: RegKeyExists: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\Teams\ does not exist
+2025-01-24 10:01:29> Program: bootStrapperModeSettings: pdsEndpoint:https://teams.microsoft.com/desktopclient/installer/windows/
+2025-01-24 10:01:29> Program: bootStrapperModeSettings: fallbackNextGenAppPayloadUrlX64:https://aka.ms/maglev-x64
+2025-01-24 10:01:29> Program: bootStrapperModeSettings: fallbackNextGenAppPayloadUrlX86:https://aka.ms/maglev-x86
+2025-01-24 10:01:29> Program: bootStrapperModeSettings: fallbackNextGenAppPayloadUrlARM64:https://aka.ms/maglev-arm64
+2025-01-24 10:01:29> Program: bootStrapperModeSettings: getInstallerEndpointUrl:https://teams.live.com/downloads/getinstaller
+2025-01-24 10:01:29> Program: bootStrapperModeSettings: fallbackNextGenWorkAppPayloadUrlX64:https://go.microsoft.com/fwlink/?linkid=2196106
+2025-01-24 10:01:29> Program: bootStrapperModeSettings: fallbackNextGenWorkAppPayloadUrlX86:https://go.microsoft.com/fwlink/?linkid=2196060
+2025-01-24 10:01:29> Program: bootStrapperModeSettings: fallbackNextGenWorkAppPayloadUrlARM64:https://go.microsoft.com/fwlink/?linkid=2196207
+2025-01-24 10:01:29> RegistryService: TryGetRegKey: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\CurrentBuildNumber exists. Data - 22621
+2025-01-24 10:01:29> RegistryService: TryGetRegKey: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\CurrentMajorVersionNumber exists. Data - 10
+2025-01-24 10:01:29> RegistryService: TryGetRegKey: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\CurrentMinorVersionNumber exists. Data - 0
+2025-01-24 10:01:29> RegistryService: TryGetRegKey: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\CurrentBuildNumber exists. Data - 22621
+2025-01-24 10:01:30> FileDownloader: Downloading url: https://teams.live.com/downloads/getinstaller?arch=x64&platVersion=10.0.22621
+2025-01-24 10:01:30> BootstrapperInstallManager: getinstaller endpoint returned installer path https://statics.teams.cdn.office.net/production-windows-x64/1.7.00.19353/
+2025-01-24 10:01:30> BootstrapperInstallManager: No decoded deep link is returned from get installer endpoint. Continue install without deep link
+2025-01-24 10:01:30> BootstrapperInstallManager: Use next gen work app
+2025-01-24 10:01:30> Program: Installing the Teams 2 client
+2025-01-24 10:01:30> Program: Running the Teams 2 client installer
+2025-01-24 10:01:30> Program: Using PackageManager API StagePackageAsync, Url: https://go.microsoft.com/fwlink/?linkid=2196106
+2025-01-24 10:01:33> Program: T2.2 StagePackageAsync progress: 2
+2025-01-24 10:01:33> Program: T2.2 StagePackageAsync progress: 3
+2025-01-24 10:01:34> Program: T2.2 StagePackageAsync progress: 3
+2025-01-24 10:01:34> Program: T2.2 StagePackageAsync progress: 51
+2025-01-24 10:01:35> Program: T2.2 StagePackageAsync progress: 100
+2025-01-24 10:01:35> Program: Staging status: Completed
+2025-01-24 10:01:35> Program: Using PackageManager RegisterPackageByFamilyName attempt 1 out of 3
+2025-01-24 10:01:40> Program: Installation of T2 failed
+2025-01-24 10:01:40> Program: Attempting to launch teams try 1 out of 3
+2025-01-24 10:01:40> Program: Exception when launching teams: System.Exception: Exception of type 'System.Exception' was thrown.
+   at Squirrel.Teams2Client.LaunchT2WithDeepLink(String deeplink, String acquireSource)
+2025-01-24 10:01:40> Program: Using LaunchUriAsync
+2025-01-24 10:01:40> Program: LaunchUriAsync succeeded
+2025-01-24 10:02:10> Program: Starting Squirrel Updater: --install . --exeName=MSTeamsSetup (2).exe --bootstrapperMode
+2025-01-24 10:02:10> RegistryService: TryDeleteRegKey: HKEY_CURRENT_USER\Software\Microsoft\Office\Teams\AcquireSource not found
+2025-01-24 10:02:10> RegistryService: RegKeyExists: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\Teams\ does not exist
+2025-01-24 10:02:11> Program: bootStrapperModeSettings: pdsEndpoint:https://teams.microsoft.com/desktopclient/installer/windows/
+2025-01-24 10:02:11> Program: bootStrapperModeSettings: fallbackNextGenAppPayloadUrlX64:https://aka.ms/maglev-x64
+2025-01-24 10:02:11> Program: bootStrapperModeSettings: fallbackNextGenAppPayloadUrlX86:https://aka.ms/maglev-x86
+2025-01-24 10:02:11> Program: bootStrapperModeSettings: fallbackNextGenAppPayloadUrlARM64:https://aka.ms/maglev-arm64
+2025-01-24 10:02:11> Program: bootStrapperModeSettings: getInstallerEndpointUrl:https://teams.live.com/downloads/getinstaller
+2025-01-24 10:02:11> Program: bootStrapperModeSettings: fallbackNextGenWorkAppPayloadUrlX64:https://go.microsoft.com/fwlink/?linkid=2196106
+2025-01-24 10:02:11> Program: bootStrapperModeSettings: fallbackNextGenWorkAppPayloadUrlX86:https://go.microsoft.com/fwlink/?linkid=2196060
+2025-01-24 10:02:11> Program: bootStrapperModeSettings: fallbackNextGenWorkAppPayloadUrlARM64:https://go.microsoft.com/fwlink/?linkid=2196207
+2025-01-24 10:02:11> RegistryService: TryGetRegKey: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\CurrentBuildNumber exists. Data - 22621
+2025-01-24 10:02:11> RegistryService: TryGetRegKey: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\CurrentMajorVersionNumber exists. Data - 10
+2025-01-24 10:02:11> RegistryService: TryGetRegKey: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\CurrentMinorVersionNumber exists. Data - 0
+2025-01-24 10:02:11> RegistryService: TryGetRegKey: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\CurrentBuildNumber exists. Data - 22621
+2025-01-24 10:02:11> FileDownloader: Downloading url: https://teams.live.com/downloads/getinstaller?arch=x64&platVersion=10.0.22621
+2025-01-24 10:02:11> BootstrapperInstallManager: getinstaller endpoint returned installer path https://statics.teams.cdn.office.net/production-windows-x64/1.7.00.19353/
+2025-01-24 10:02:11> BootstrapperInstallManager: No decoded deep link is returned from get installer endpoint. Continue install without deep link
+2025-01-24 10:02:11> BootstrapperInstallManager: Use next gen work app
+2025-01-24 10:02:11> Program: Installing the Teams 2 client
+2025-01-24 10:02:11> Program: Running the Teams 2 client installer
+2025-01-24 10:02:11> Program: Using PackageManager API StagePackageAsync, Url: https://go.microsoft.com/fwlink/?linkid=2196106
+2025-01-24 10:02:12> Program: T2.2 StagePackageAsync progress: 2
+2025-01-24 10:02:12> Program: T2.2 StagePackageAsync progress: 3
+2025-01-24 10:02:20> Program: T2.2 StagePackageAsync progress: 3
+2025-01-24 10:02:20> Program: T2.2 StagePackageAsync progress: 51
+2025-01-24 10:02:20> Program: T2.2 StagePackageAsync progress: 100
+2025-01-24 10:02:20> Program: Staging status: Completed
+2025-01-24 10:02:20> Program: Using PackageManager RegisterPackageByFamilyName attempt 1 out of 3
+2025-01-24 10:02:25> Program: Installation of T2 failed
+2025-01-24 10:02:25> Program: Attempting to launch teams try 1 out of 3
+2025-01-24 10:02:25> Program: Exception when launching teams: System.Exception: Exception of type 'System.Exception' was thrown.
+   at Squirrel.Teams2Client.LaunchT2WithDeepLink(String deeplink, String acquireSource)
+2025-01-24 10:02:25> Program: Using LaunchUriAsync
+2025-01-24 10:02:25> Program: LaunchUriAsync succeeded
+2025-01-24 10:03:07> Program: Starting Squirrel Updater: --install . --exeName=MSTeamsSetup (2).exe --bootstrapperMode
+2025-01-24 10:03:07> RegistryService: TryDeleteRegKey: HKEY_CURRENT_USER\Software\Microsoft\Office\Teams\AcquireSource not found
+2025-01-24 10:03:07> RegistryService: RegKeyExists: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\Teams\ does not exist
+2025-01-24 10:03:07> Program: bootStrapperModeSettings: pdsEndpoint:https://teams.microsoft.com/desktopclient/installer/windows/
+2025-01-24 10:03:07> Program: bootStrapperModeSettings: fallbackNextGenAppPayloadUrlX64:https://aka.ms/maglev-x64
+2025-01-24 10:03:07> Program: bootStrapperModeSettings: fallbackNextGenAppPayloadUrlX86:https://aka.ms/maglev-x86
+2025-01-24 10:03:07> Program: bootStrapperModeSettings: fallbackNextGenAppPayloadUrlARM64:https://aka.ms/maglev-arm64
+2025-01-24 10:03:07> Program: bootStrapperModeSettings: getInstallerEndpointUrl:https://teams.live.com/downloads/getinstaller
+2025-01-24 10:03:07> Program: bootStrapperModeSettings: fallbackNextGenWorkAppPayloadUrlX64:https://go.microsoft.com/fwlink/?linkid=2196106
+2025-01-24 10:03:07> Program: bootStrapperModeSettings: fallbackNextGenWorkAppPayloadUrlX86:https://go.microsoft.com/fwlink/?linkid=2196060
+2025-01-24 10:03:07> Program: bootStrapperModeSettings: fallbackNextGenWorkAppPayloadUrlARM64:https://go.microsoft.com/fwlink/?linkid=2196207
+2025-01-24 10:03:07> RegistryService: TryGetRegKey: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\CurrentBuildNumber exists. Data - 22621
+2025-01-24 10:03:07> RegistryService: TryGetRegKey: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\CurrentMajorVersionNumber exists. Data - 10
+2025-01-24 10:03:07> RegistryService: TryGetRegKey: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\CurrentMinorVersionNumber exists. Data - 0
+2025-01-24 10:03:07> RegistryService: TryGetRegKey: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\CurrentBuildNumber exists. Data - 22621
+2025-01-24 10:03:07> FileDownloader: Downloading url: https://teams.live.com/downloads/getinstaller?arch=x64&platVersion=10.0.22621
+2025-01-24 10:03:07> BootstrapperInstallManager: getinstaller endpoint returned installer path https://statics.teams.cdn.office.net/production-windows-x64/1.7.00.19353/
+2025-01-24 10:03:07> BootstrapperInstallManager: No decoded deep link is returned from get installer endpoint. Continue install without deep link
+2025-01-24 10:03:07> BootstrapperInstallManager: Use next gen work app
+2025-01-24 10:03:07> Program: Installing the Teams 2 client
+2025-01-24 10:03:07> Program: Running the Teams 2 client installer
+2025-01-24 10:03:07> Program: Using PackageManager API StagePackageAsync, Url: https://go.microsoft.com/fwlink/?linkid=2196106
+2025-01-24 10:03:09> Program: T2.2 StagePackageAsync progress: 2
+2025-01-24 10:03:09> Program: T2.2 StagePackageAsync progress: 3
+2025-01-24 10:03:10> Program: T2.2 StagePackageAsync progress: 3
+2025-01-24 10:03:10> Program: T2.2 StagePackageAsync progress: 51
+2025-01-24 10:03:10> Program: T2.2 StagePackageAsync progress: 100
+2025-01-24 10:03:10> Program: Staging status: Completed
+2025-01-24 10:03:10> Program: Using PackageManager RegisterPackageByFamilyName attempt 1 out of 3
+2025-01-24 10:03:15> Program: Installation of T2 failed
+2025-01-24 10:03:15> Program: Attempting to launch teams try 1 out of 3
+2025-01-24 10:03:15> Program: Exception when launching teams: System.Exception: Exception of type 'System.Exception' was thrown.
+   at Squirrel.Teams2Client.LaunchT2WithDeepLink(String deeplink, String acquireSource)
+2025-01-24 10:03:15> Program: Using LaunchUriAsync
+2025-01-24 10:03:15> Program: LaunchUriAsync succeeded
+2025-01-24 10:03:42> Program: Starting Squirrel Updater: --install . --exeName=MSTeamsSetup (2).exe --bootstrapperMode
+2025-01-24 10:03:42> RegistryService: TryDeleteRegKey: HKEY_CURRENT_USER\Software\Microsoft\Office\Teams\AcquireSource not found
+2025-01-24 10:03:42> RegistryService: RegKeyExists: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\Teams\ does not exist
+2025-01-24 10:03:42> Program: bootStrapperModeSettings: pdsEndpoint:https://teams.microsoft.com/desktopclient/installer/windows/
+2025-01-24 10:03:42> Program: bootStrapperModeSettings: fallbackNextGenAppPayloadUrlX64:https://aka.ms/maglev-x64
+2025-01-24 10:03:42> Program: bootStrapperModeSettings: fallbackNextGenAppPayloadUrlX86:https://aka.ms/maglev-x86
+2025-01-24 10:03:42> Program: bootStrapperModeSettings: fallbackNextGenAppPayloadUrlARM64:https://aka.ms/maglev-arm64
+2025-01-24 10:03:42> Program: bootStrapperModeSettings: getInstallerEndpointUrl:https://teams.live.com/downloads/getinstaller
+2025-01-24 10:03:42> Program: bootStrapperModeSettings: fallbackNextGenWorkAppPayloadUrlX64:https://go.microsoft.com/fwlink/?linkid=2196106
+2025-01-24 10:03:42> Program: bootStrapperModeSettings: fallbackNextGenWorkAppPayloadUrlX86:https://go.microsoft.com/fwlink/?linkid=2196060
+2025-01-24 10:03:42> Program: bootStrapperModeSettings: fallbackNextGenWorkAppPayloadUrlARM64:https://go.microsoft.com/fwlink/?linkid=2196207
+2025-01-24 10:03:42> RegistryService: TryGetRegKey: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\CurrentBuildNumber exists. Data - 22621
+2025-01-24 10:03:42> RegistryService: TryGetRegKey: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\CurrentMajorVersionNumber exists. Data - 10
+2025-01-24 10:03:42> RegistryService: TryGetRegKey: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\CurrentMinorVersionNumber exists. Data - 0
+2025-01-24 10:03:42> RegistryService: TryGetRegKey: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\CurrentBuildNumber exists. Data - 22621
+2025-01-24 10:03:42> FileDownloader: Downloading url: https://teams.live.com/downloads/getinstaller?arch=x64&platVersion=10.0.22621
+2025-01-24 10:03:42> BootstrapperInstallManager: getinstaller endpoint returned installer path https://statics.teams.cdn.office.net/production-windows-x64/1.7.00.19353/
+2025-01-24 10:03:42> BootstrapperInstallManager: No decoded deep link is returned from get installer endpoint. Continue install without deep link
+2025-01-24 10:03:42> BootstrapperInstallManager: Use next gen work app
+2025-01-24 10:03:42> Program: Installing the Teams 2 client
+2025-01-24 10:03:42> Program: Running the Teams 2 client installer
+2025-01-24 10:03:42> Program: Using PackageManager API StagePackageAsync, Url: https://go.microsoft.com/fwlink/?linkid=2196106
+2025-01-24 10:03:43> Program: T2.2 StagePackageAsync progress: 2
+2025-01-24 10:03:44> Program: T2.2 StagePackageAsync progress: 3
+2025-01-24 10:03:45> Program: T2.2 StagePackageAsync progress: 3
+2025-01-24 10:03:45> Program: T2.2 StagePackageAsync progress: 51
+2025-01-24 10:03:45> Program: T2.2 StagePackageAsync progress: 100
+2025-01-24 10:03:45> Program: Staging status: Completed
+2025-01-24 10:03:45> Program: Using PackageManager RegisterPackageByFamilyName attempt 1 out of 3
+2025-01-24 10:03:50> Program: Installation of T2 failed
+2025-01-24 10:03:50> Program: Attempting to launch teams try 1 out of 3
+2025-01-24 10:03:50> Program: Exception when launching teams: System.Exception: Exception of type 'System.Exception' was thrown.
+   at Squirrel.Teams2Client.LaunchT2WithDeepLink(String deeplink, String acquireSource)
+2025-01-24 10:03:50> Program: Using LaunchUriAsync
+2025-01-24 10:03:50> Program: LaunchUriAsync succeeded
+2025-01-24 10:04:07> Program: Starting Squirrel Updater: --install . --exeName=MSTeamsSetup (3).exe --bootstrapperMode
+2025-01-24 10:04:07> RegistryService: TryDeleteRegKey: HKEY_CURRENT_USER\Software\Microsoft\Office\Teams\AcquireSource not found
+2025-01-24 10:04:07> RegistryService: RegKeyExists: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\Teams\ does not exist
+2025-01-24 10:04:07> Program: bootStrapperModeSettings: pdsEndpoint:https://teams.microsoft.com/desktopclient/installer/windows/
+2025-01-24 10:04:07> Program: bootStrapperModeSettings: fallbackNextGenAppPayloadUrlX64:https://aka.ms/maglev-x64
+2025-01-24 10:04:07> Program: bootStrapperModeSettings: fallbackNextGenAppPayloadUrlX86:https://aka.ms/maglev-x86
+2025-01-24 10:04:07> Program: bootStrapperModeSettings: fallbackNextGenAppPayloadUrlARM64:https://aka.ms/maglev-arm64
+2025-01-24 10:04:07> Program: bootStrapperModeSettings: getInstallerEndpointUrl:https://teams.live.com/downloads/getinstaller
+2025-01-24 10:04:07> Program: bootStrapperModeSettings: fallbackNextGenWorkAppPayloadUrlX64:https://go.microsoft.com/fwlink/?linkid=2196106
+2025-01-24 10:04:07> Program: bootStrapperModeSettings: fallbackNextGenWorkAppPayloadUrlX86:https://go.microsoft.com/fwlink/?linkid=2196060
+2025-01-24 10:04:07> Program: bootStrapperModeSettings: fallbackNextGenWorkAppPayloadUrlARM64:https://go.microsoft.com/fwlink/?linkid=2196207
+2025-01-24 10:04:07> RegistryService: TryGetRegKey: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\CurrentBuildNumber exists. Data - 22621
+2025-01-24 10:04:07> RegistryService: TryGetRegKey: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\CurrentMajorVersionNumber exists. Data - 10
+2025-01-24 10:04:07> RegistryService: TryGetRegKey: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\CurrentMinorVersionNumber exists. Data - 0
+2025-01-24 10:04:07> RegistryService: TryGetRegKey: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\CurrentBuildNumber exists. Data - 22621
+2025-01-24 10:04:07> FileDownloader: Downloading url: https://teams.live.com/downloads/getinstaller?arch=x64&platVersion=10.0.22621
+2025-01-24 10:04:08> BootstrapperInstallManager: getinstaller endpoint returned installer path https://statics.teams.cdn.office.net/production-windows-x64/1.7.00.19353/
+2025-01-24 10:04:08> BootstrapperInstallManager: No decoded deep link is returned from get installer endpoint. Continue install without deep link
+2025-01-24 10:04:08> BootstrapperInstallManager: Use next gen work app
+2025-01-24 10:04:08> Program: Installing the Teams 2 client
+2025-01-24 10:04:08> Program: Running the Teams 2 client installer
+2025-01-24 10:04:08> Program: Using PackageManager API StagePackageAsync, Url: https://go.microsoft.com/fwlink/?linkid=2196106
+2025-01-24 10:04:09> Program: T2.2 StagePackageAsync progress: 2
+2025-01-24 10:04:09> Program: T2.2 StagePackageAsync progress: 3
+2025-01-24 10:04:11> Program: T2.2 StagePackageAsync progress: 3
+2025-01-24 10:04:11> Program: T2.2 StagePackageAsync progress: 51
+2025-01-24 10:04:11> Program: T2.2 StagePackageAsync progress: 100
+2025-01-24 10:04:11> Program: Staging status: Completed
+2025-01-24 10:04:11> Program: Using PackageManager RegisterPackageByFamilyName attempt 1 out of 3
+2025-01-24 10:04:16> Program: Installation of T2 failed
+2025-01-24 10:04:16> Program: Attempting to launch teams try 1 out of 3
+2025-01-24 10:04:16> Program: Exception when launching teams: System.Exception: Exception of type 'System.Exception' was thrown.
+   at Squirrel.Teams2Client.LaunchT2WithDeepLink(String deeplink, String acquireSource)
+2025-01-24 10:04:16> Program: Using LaunchUriAsync
+2025-01-24 10:04:16> Program: LaunchUriAsync succeeded
+2025-01-24 10:05:20> Program: Starting Squirrel Updater: --install . --exeName=MSTeamsSetup (4).exe --bootstrapperMode
+2025-01-24 10:05:20> RegistryService: TryDeleteRegKey: HKEY_CURRENT_USER\Software\Microsoft\Office\Teams\AcquireSource not found
+2025-01-24 10:05:20> RegistryService: RegKeyExists: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\Teams\ does not exist
+2025-01-24 10:05:20> Program: bootStrapperModeSettings: pdsEndpoint:https://teams.microsoft.com/desktopclient/installer/windows/
+2025-01-24 10:05:20> Program: bootStrapperModeSettings: fallbackNextGenAppPayloadUrlX64:https://aka.ms/maglev-x64
+2025-01-24 10:05:20> Program: bootStrapperModeSettings: fallbackNextGenAppPayloadUrlX86:https://aka.ms/maglev-x86
+2025-01-24 10:05:20> Program: bootStrapperModeSettings: fallbackNextGenAppPayloadUrlARM64:https://aka.ms/maglev-arm64
+2025-01-24 10:05:20> Program: bootStrapperModeSettings: getInstallerEndpointUrl:https://teams.live.com/downloads/getinstaller
+2025-01-24 10:05:20> Program: bootStrapperModeSettings: fallbackNextGenWorkAppPayloadUrlX64:https://go.microsoft.com/fwlink/?linkid=2196106
+2025-01-24 10:05:20> Program: bootStrapperModeSettings: fallbackNextGenWorkAppPayloadUrlX86:https://go.microsoft.com/fwlink/?linkid=2196060
+2025-01-24 10:05:20> Program: bootStrapperModeSettings: fallbackNextGenWorkAppPayloadUrlARM64:https://go.microsoft.com/fwlink/?linkid=2196207
+2025-01-24 10:05:20> RegistryService: TryGetRegKey: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\CurrentBuildNumber exists. Data - 22621
+2025-01-24 10:05:20> RegistryService: TryGetRegKey: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\CurrentMajorVersionNumber exists. Data - 10
+2025-01-24 10:05:20> RegistryService: TryGetRegKey: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\CurrentMinorVersionNumber exists. Data - 0
+2025-01-24 10:05:20> RegistryService: TryGetRegKey: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\CurrentBuildNumber exists. Data - 22621
+2025-01-24 10:05:20> FileDownloader: Downloading url: https://teams.live.com/downloads/getinstaller?arch=x64&platVersion=10.0.22621
+2025-01-24 10:05:20> BootstrapperInstallManager: getinstaller endpoint returned installer path https://statics.teams.cdn.office.net/production-windows-x64/1.7.00.19353/
+2025-01-24 10:05:20> BootstrapperInstallManager: No decoded deep link is returned from get installer endpoint. Continue install without deep link
+2025-01-24 10:05:20> BootstrapperInstallManager: Use next gen work app
+2025-01-24 10:05:20> Program: Installing the Teams 2 client
+2025-01-24 10:05:20> Program: Running the Teams 2 client installer
+2025-01-24 10:05:20> Program: Using PackageManager API StagePackageAsync, Url: https://go.microsoft.com/fwlink/?linkid=2196106
+2025-01-24 10:05:22> Program: T2.2 StagePackageAsync progress: 2
+2025-01-24 10:05:22> Program: T2.2 StagePackageAsync progress: 3
+2025-01-24 10:05:30> Program: T2.2 StagePackageAsync progress: 3
+2025-01-24 10:05:30> Program: T2.2 StagePackageAsync progress: 51
+2025-01-24 10:05:30> Program: T2.2 StagePackageAsync progress: 100
+2025-01-24 10:05:30> Program: Staging status: Completed
+2025-01-24 10:05:30> Program: Using PackageManager RegisterPackageByFamilyName attempt 1 out of 3
+2025-01-24 10:05:35> Program: Installation of T2 failed
+2025-01-24 10:05:35> Program: Attempting to launch teams try 1 out of 3
+2025-01-24 10:05:35> Program: Exception when launching teams: System.Exception: Exception of type 'System.Exception' was thrown.
+   at Squirrel.Teams2Client.LaunchT2WithDeepLink(String deeplink, String acquireSource)
+2025-01-24 10:05:35> Program: Using LaunchUriAsync
+2025-01-24 10:05:35> Program: LaunchUriAsync succeeded
+2025-01-27 09:21:56> Program: Starting Squirrel Updater: --install . --exeName=MSTeamsSetup (5).exe --bootstrapperMode
+2025-01-27 09:21:56> RegistryService: TryDeleteRegKey: HKEY_CURRENT_USER\Software\Microsoft\Office\Teams\AcquireSource not found
+2025-01-27 09:21:56> RegistryService: RegKeyExists: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\Teams\ does not exist
+2025-01-27 09:21:56> Program: bootStrapperModeSettings: pdsEndpoint:https://teams.microsoft.com/desktopclient/installer/windows/
+2025-01-27 09:21:56> Program: bootStrapperModeSettings: fallbackNextGenAppPayloadUrlX64:https://aka.ms/maglev-x64
+2025-01-27 09:21:56> Program: bootStrapperModeSettings: fallbackNextGenAppPayloadUrlX86:https://aka.ms/maglev-x86
+2025-01-27 09:21:56> Program: bootStrapperModeSettings: fallbackNextGenAppPayloadUrlARM64:https://aka.ms/maglev-arm64
+2025-01-27 09:21:56> Program: bootStrapperModeSettings: getInstallerEndpointUrl:https://teams.live.com/downloads/getinstaller
+2025-01-27 09:21:56> Program: bootStrapperModeSettings: fallbackNextGenWorkAppPayloadUrlX64:https://go.microsoft.com/fwlink/?linkid=2196106
+2025-01-27 09:21:56> Program: bootStrapperModeSettings: fallbackNextGenWorkAppPayloadUrlX86:https://go.microsoft.com/fwlink/?linkid=2196060
+2025-01-27 09:21:56> Program: bootStrapperModeSettings: fallbackNextGenWorkAppPayloadUrlARM64:https://go.microsoft.com/fwlink/?linkid=2196207
+2025-01-27 09:21:56> RegistryService: TryGetRegKey: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\CurrentBuildNumber exists. Data - 22621
+2025-01-27 09:21:56> RegistryService: TryGetRegKey: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\CurrentMajorVersionNumber exists. Data - 10
+2025-01-27 09:21:56> RegistryService: TryGetRegKey: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\CurrentMinorVersionNumber exists. Data - 0
+2025-01-27 09:21:56> RegistryService: TryGetRegKey: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\CurrentBuildNumber exists. Data - 22621
+2025-01-27 09:21:57> FileDownloader: Downloading url: https://teams.live.com/downloads/getinstaller?arch=x64&platVersion=10.0.22621
+2025-01-27 09:21:57> BootstrapperInstallManager: getinstaller endpoint returned installer path https://statics.teams.cdn.office.net/production-windows-x64/1.7.00.19353/
+2025-01-27 09:21:57> BootstrapperInstallManager: No decoded deep link is returned from get installer endpoint. Continue install without deep link
+2025-01-27 09:21:57> BootstrapperInstallManager: Use next gen work app
+2025-01-27 09:21:57> Program: Installing the Teams 2 client
+2025-01-27 09:21:57> Program: Running the Teams 2 client installer
+2025-01-27 09:21:57> Program: Using PackageManager API StagePackageAsync, Url: https://go.microsoft.com/fwlink/?linkid=2196106
+2025-01-27 09:21:58> Program: T2.2 StagePackageAsync progress: 2
+2025-01-27 09:21:59> Program: T2.2 StagePackageAsync progress: 3
+2025-01-27 09:22:00> Program: T2.2 StagePackageAsync progress: 3
+2025-01-27 09:22:00> Program: T2.2 StagePackageAsync progress: 51
+2025-01-27 09:22:00> Program: T2.2 StagePackageAsync progress: 100
+2025-01-27 09:22:00> Program: Staging status: Completed
+2025-01-27 09:22:00> Program: Using PackageManager RegisterPackageByFamilyName attempt 1 out of 3
+2025-01-27 09:22:05> Program: Installation of T2 failed
+2025-01-27 09:22:05> Program: Attempting to launch teams try 1 out of 3
+2025-01-27 09:22:05> Program: Exception when launching teams: System.Exception: Exception of type 'System.Exception' was thrown.
+   at Squirrel.Teams2Client.LaunchT2WithDeepLink(String deeplink, String acquireSource)
+2025-01-27 09:22:05> Program: Using LaunchUriAsync
+2025-01-27 09:22:05> Program: LaunchUriAsync succeeded
+2025-01-27 09:22:31> Program: Starting Squirrel Updater: --install . --exeName=MSTeamsSetup (5).exe --bootstrapperMode
+2025-01-27 09:22:31> RegistryService: TryDeleteRegKey: HKEY_CURRENT_USER\Software\Microsoft\Office\Teams\AcquireSource not found
+2025-01-27 09:22:31> RegistryService: RegKeyExists: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\Teams\ does not exist
+2025-01-27 09:22:31> Program: bootStrapperModeSettings: pdsEndpoint:https://teams.microsoft.com/desktopclient/installer/windows/
+2025-01-27 09:22:31> Program: bootStrapperModeSettings: fallbackNextGenAppPayloadUrlX64:https://aka.ms/maglev-x64
+2025-01-27 09:22:31> Program: bootStrapperModeSettings: fallbackNextGenAppPayloadUrlX86:https://aka.ms/maglev-x86
+2025-01-27 09:22:31> Program: bootStrapperModeSettings: fallbackNextGenAppPayloadUrlARM64:https://aka.ms/maglev-arm64
+2025-01-27 09:22:31> Program: bootStrapperModeSettings: getInstallerEndpointUrl:https://teams.live.com/downloads/getinstaller
+2025-01-27 09:22:31> Program: bootStrapperModeSettings: fallbackNextGenWorkAppPayloadUrlX64:https://go.microsoft.com/fwlink/?linkid=2196106
+2025-01-27 09:22:31> Program: bootStrapperModeSettings: fallbackNextGenWorkAppPayloadUrlX86:https://go.microsoft.com/fwlink/?linkid=2196060
+2025-01-27 09:22:31> Program: bootStrapperModeSettings: fallbackNextGenWorkAppPayloadUrlARM64:https://go.microsoft.com/fwlink/?linkid=2196207
+2025-01-27 09:22:31> RegistryService: TryGetRegKey: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\CurrentBuildNumber exists. Data - 22621
+2025-01-27 09:22:31> RegistryService: TryGetRegKey: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\CurrentMajorVersionNumber exists. Data - 10
+2025-01-27 09:22:31> RegistryService: TryGetRegKey: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\CurrentMinorVersionNumber exists. Data - 0
+2025-01-27 09:22:31> RegistryService: TryGetRegKey: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\CurrentBuildNumber exists. Data - 22621
+2025-01-27 09:22:32> FileDownloader: Downloading url: https://teams.live.com/downloads/getinstaller?arch=x64&platVersion=10.0.22621
+2025-01-27 09:22:32> BootstrapperInstallManager: getinstaller endpoint returned installer path https://statics.teams.cdn.office.net/production-windows-x64/1.7.00.19353/
+2025-01-27 09:22:32> BootstrapperInstallManager: No decoded deep link is returned from get installer endpoint. Continue install without deep link
+2025-01-27 09:22:32> BootstrapperInstallManager: Use next gen work app
+2025-01-27 09:22:32> Program: Installing the Teams 2 client
+2025-01-27 09:22:32> Program: Running the Teams 2 client installer
+2025-01-27 09:22:32> Program: Using PackageManager API StagePackageAsync, Url: https://go.microsoft.com/fwlink/?linkid=2196106
+2025-01-27 09:22:34> Program: T2.2 StagePackageAsync progress: 2
+2025-01-27 09:22:34> Program: T2.2 StagePackageAsync progress: 3
+2025-01-27 09:22:35> Program: T2.2 StagePackageAsync progress: 3
+2025-01-27 09:22:35> Program: T2.2 StagePackageAsync progress: 51
+2025-01-27 09:22:36> Program: T2.2 StagePackageAsync progress: 100
+2025-01-27 09:22:36> Program: Staging status: Completed
+2025-01-27 09:22:36> Program: Using PackageManager RegisterPackageByFamilyName attempt 1 out of 3
+2025-01-27 09:22:41> Program: Installation of T2 failed
+2025-01-27 09:22:41> Program: Attempting to launch teams try 1 out of 3
+2025-01-27 09:22:41> Program: Exception when launching teams: System.Exception: Exception of type 'System.Exception' was thrown.
+   at Squirrel.Teams2Client.LaunchT2WithDeepLink(String deeplink, String acquireSource)
+2025-01-27 09:22:41> Program: Using LaunchUriAsync
+2025-01-27 09:22:41> Program: LaunchUriAsync succeeded
+2025-01-27 09:23:14> Program: Starting Squirrel Updater: --install . --exeName=MSTeamsSetup (5).exe --bootstrapperMode
+2025-01-27 09:23:14> RegistryService: TryDeleteRegKey: HKEY_CURRENT_USER\Software\Microsoft\Office\Teams\AcquireSource not found
+2025-01-27 09:23:14> RegistryService: RegKeyExists: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\Teams\ does not exist
+2025-01-27 09:23:14> Program: bootStrapperModeSettings: pdsEndpoint:https://teams.microsoft.com/desktopclient/installer/windows/
+2025-01-27 09:23:14> Program: bootStrapperModeSettings: fallbackNextGenAppPayloadUrlX64:https://aka.ms/maglev-x64
+2025-01-27 09:23:14> Program: bootStrapperModeSettings: fallbackNextGenAppPayloadUrlX86:https://aka.ms/maglev-x86
+2025-01-27 09:23:14> Program: bootStrapperModeSettings: fallbackNextGenAppPayloadUrlARM64:https://aka.ms/maglev-arm64
+2025-01-27 09:23:14> Program: bootStrapperModeSettings: getInstallerEndpointUrl:https://teams.live.com/downloads/getinstaller
+2025-01-27 09:23:14> Program: bootStrapperModeSettings: fallbackNextGenWorkAppPayloadUrlX64:https://go.microsoft.com/fwlink/?linkid=2196106
+2025-01-27 09:23:14> Program: bootStrapperModeSettings: fallbackNextGenWorkAppPayloadUrlX86:https://go.microsoft.com/fwlink/?linkid=2196060
+2025-01-27 09:23:14> Program: bootStrapperModeSettings: fallbackNextGenWorkAppPayloadUrlARM64:https://go.microsoft.com/fwlink/?linkid=2196207
+2025-01-27 09:23:14> RegistryService: TryGetRegKey: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\CurrentBuildNumber exists. Data - 22621
+2025-01-27 09:23:14> RegistryService: TryGetRegKey: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\CurrentMajorVersionNumber exists. Data - 10
+2025-01-27 09:23:14> RegistryService: TryGetRegKey: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\CurrentMinorVersionNumber exists. Data - 0
+2025-01-27 09:23:14> RegistryService: TryGetRegKey: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\CurrentBuildNumber exists. Data - 22621
+2025-01-27 09:23:14> FileDownloader: Downloading url: https://teams.live.com/downloads/getinstaller?arch=x64&platVersion=10.0.22621
+2025-01-27 09:23:14> BootstrapperInstallManager: getinstaller endpoint returned installer path https://statics.teams.cdn.office.net/production-windows-x64/1.7.00.19353/
+2025-01-27 09:23:14> BootstrapperInstallManager: No decoded deep link is returned from get installer endpoint. Continue install without deep link
+2025-01-27 09:23:14> BootstrapperInstallManager: Use next gen work app
+2025-01-27 09:23:14> Program: Installing the Teams 2 client
+2025-01-27 09:23:14> Program: Running the Teams 2 client installer
+2025-01-27 09:23:14> Program: Using PackageManager API StagePackageAsync, Url: https://go.microsoft.com/fwlink/?linkid=2196106
+2025-01-27 09:23:15> Program: T2.2 StagePackageAsync progress: 2
+2025-01-27 09:23:15> Program: T2.2 StagePackageAsync progress: 3
+2025-01-27 09:23:17> Program: T2.2 StagePackageAsync progress: 3
+2025-01-27 09:23:17> Program: T2.2 StagePackageAsync progress: 51
+2025-01-27 09:23:17> Program: T2.2 StagePackageAsync progress: 100
+2025-01-27 09:23:17> Program: Staging status: Completed
+2025-01-27 09:23:17> Program: Using PackageManager RegisterPackageByFamilyName attempt 1 out of 3
+2025-01-27 09:23:22> Program: Installation of T2 failed
+2025-01-27 09:23:22> Program: Attempting to launch teams try 1 out of 3
+2025-01-27 09:23:22> Program: Exception when launching teams: System.Exception: Exception of type 'System.Exception' was thrown.
+   at Squirrel.Teams2Client.LaunchT2WithDeepLink(String deeplink, String acquireSource)
+2025-01-27 09:23:22> Program: Using LaunchUriAsync
+2025-01-27 09:23:22> Program: LaunchUriAsync succeeded
+2025-01-27 09:40:23> Program: Starting Squirrel Updater: --install . --exeName=MSTeamsSetup (5).exe --bootstrapperMode
+2025-01-27 09:40:23> RegistryService: TryDeleteRegKey: HKEY_CURRENT_USER\Software\Microsoft\Office\Teams\AcquireSource not found
+2025-01-27 09:40:23> RegistryService: RegKeyExists: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\Teams\ does not exist
+2025-01-27 09:40:23> Program: bootStrapperModeSettings: pdsEndpoint:https://teams.microsoft.com/desktopclient/installer/windows/
+2025-01-27 09:40:23> Program: bootStrapperModeSettings: fallbackNextGenAppPayloadUrlX64:https://aka.ms/maglev-x64
+2025-01-27 09:40:23> Program: bootStrapperModeSettings: fallbackNextGenAppPayloadUrlX86:https://aka.ms/maglev-x86
+2025-01-27 09:40:23> Program: bootStrapperModeSettings: fallbackNextGenAppPayloadUrlARM64:https://aka.ms/maglev-arm64
+2025-01-27 09:40:23> Program: bootStrapperModeSettings: getInstallerEndpointUrl:https://teams.live.com/downloads/getinstaller
+2025-01-27 09:40:23> Program: bootStrapperModeSettings: fallbackNextGenWorkAppPayloadUrlX64:https://go.microsoft.com/fwlink/?linkid=2196106
+2025-01-27 09:40:23> Program: bootStrapperModeSettings: fallbackNextGenWorkAppPayloadUrlX86:https://go.microsoft.com/fwlink/?linkid=2196060
+2025-01-27 09:40:23> Program: bootStrapperModeSettings: fallbackNextGenWorkAppPayloadUrlARM64:https://go.microsoft.com/fwlink/?linkid=2196207
+2025-01-27 09:40:23> RegistryService: TryGetRegKey: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\CurrentBuildNumber exists. Data - 22621
+2025-01-27 09:40:23> RegistryService: TryGetRegKey: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\CurrentMajorVersionNumber exists. Data - 10
+2025-01-27 09:40:23> RegistryService: TryGetRegKey: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\CurrentMinorVersionNumber exists. Data - 0
+2025-01-27 09:40:23> RegistryService: TryGetRegKey: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\CurrentBuildNumber exists. Data - 22621
+2025-01-27 09:40:24> FileDownloader: Downloading url: https://teams.live.com/downloads/getinstaller?arch=x64&platVersion=10.0.22621
+2025-01-27 09:40:24> BootstrapperInstallManager: getinstaller endpoint returned installer path https://statics.teams.cdn.office.net/production-windows-x64/1.7.00.19353/
+2025-01-27 09:40:24> BootstrapperInstallManager: No decoded deep link is returned from get installer endpoint. Continue install without deep link
+2025-01-27 09:40:24> BootstrapperInstallManager: Use next gen work app
+2025-01-27 09:40:24> Program: Installing the Teams 2 client
+2025-01-27 09:40:24> Program: Running the Teams 2 client installer
+2025-01-27 09:40:24> Program: Using PackageManager API StagePackageAsync, Url: https://go.microsoft.com/fwlink/?linkid=2196106
+2025-01-27 09:40:26> Program: T2.2 StagePackageAsync progress: 2
+2025-01-27 09:40:26> Program: T2.2 StagePackageAsync progress: 3
+2025-01-27 09:40:28> Program: T2.2 StagePackageAsync progress: 3
+2025-01-27 09:40:28> Program: T2.2 StagePackageAsync progress: 51
+2025-01-27 09:40:28> Program: T2.2 StagePackageAsync progress: 100
+2025-01-27 09:40:28> Program: Staging status: Completed
+2025-01-27 09:40:28> Program: Using PackageManager RegisterPackageByFamilyName attempt 1 out of 3
+2025-01-27 09:40:33> Program: Installation of T2 failed
+2025-01-27 09:40:33> Program: Attempting to launch teams try 1 out of 3
+2025-01-27 09:40:33> Program: Exception when launching teams: System.Exception: Exception of type 'System.Exception' was thrown.
+   at Squirrel.Teams2Client.LaunchT2WithDeepLink(String deeplink, String acquireSource)
+2025-01-27 09:40:33> Program: Using LaunchUriAsync
+2025-01-27 09:40:33> Program: LaunchUriAsync succeeded
+2025-01-27 11:32:25> Program: Starting Squirrel Updater: --install .
+2025-01-27 11:32:25> Program: Starting install, writing to C:\Users\jeravels\AppData\Local\SquirrelTemp
+2025-01-27 11:32:25> Program: About to install to: C:\Users\jeravels\AppData\Local\vysor
+2025-01-27 11:32:25> Program: Install path C:\Users\jeravels\AppData\Local\vysor already exists, burning it to the ground
+2025-01-27 11:32:25> IEnableLogger: : System.ArgumentException: Process with an Id of 8144 is not running.
+   at System.Diagnostics.Process.GetProcessById(Int32 processId, String machineName)
+   at System.Diagnostics.Process.GetProcessById(Int32 processId)
+   at Squirrel.UpdateManager.InstallHelperImpl.<>c__DisplayClass6_1.<KillAllProcessesBelongingToPackage>b__2()
+   at Squirrel.Utility.LogIfThrows(IFullLogger This, LogLevel level, String message, Action block)
+2025-01-27 11:32:25> IEnableLogger: : System.ArgumentException: Process with an Id of 10652 is not running.
+   at System.Diagnostics.Process.GetProcessById(Int32 processId, String machineName)
+   at System.Diagnostics.Process.GetProcessById(Int32 processId)
+   at Squirrel.UpdateManager.InstallHelperImpl.<>c__DisplayClass6_1.<KillAllProcessesBelongingToPackage>b__2()
+   at Squirrel.Utility.LogIfThrows(IFullLogger This, LogLevel level, String message, Action block)
+2025-01-27 11:32:25> IEnableLogger: : System.ArgumentException: Process with an Id of 26612 is not running.
+   at System.Diagnostics.Process.GetProcessById(Int32 processId, String machineName)
+   at System.Diagnostics.Process.GetProcessById(Int32 processId)
+   at Squirrel.UpdateManager.InstallHelperImpl.<>c__DisplayClass6_1.<KillAllProcessesBelongingToPackage>b__2()
+   at Squirrel.Utility.LogIfThrows(IFullLogger This, LogLevel level, String message, Action block)
+2025-01-27 11:32:31> IEnableLogger: Failed to remove existing directory on full install, is the app still running???: System.IO.IOException: The process cannot access the file 'C:\Users\jeravels\AppData\Local\vysor\app-5.0.7\icudtl.dat' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalDelete(String path, Boolean checkHost)
+   at System.IO.File.Delete(String path)
+   at Squirrel.Utility.<>c.<DeleteDirectory>b__19_0(String file)
+   at Squirrel.Utility.<>c__DisplayClass12_1`1.<ForEachAsync>b__1()
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c__DisplayClass13_1`1.<<ForEachAsync>b__1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<DeleteDirectory>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c.<<DeleteDirectory>b__19_1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c__DisplayClass13_1`1.<<ForEachAsync>b__1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<DeleteDirectory>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<LogIfThrows>d__42.MoveNext()
+2025-01-27 11:32:31> Unhandled exception: System.AggregateException: One or more errors occurred. ---> System.IO.IOException: The process cannot access the file 'C:\Users\jeravels\AppData\Local\vysor\app-5.0.7\icudtl.dat' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalDelete(String path, Boolean checkHost)
+   at System.IO.File.Delete(String path)
+   at Squirrel.Utility.<>c.<DeleteDirectory>b__19_0(String file)
+   at Squirrel.Utility.<>c__DisplayClass12_1`1.<ForEachAsync>b__1()
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c__DisplayClass13_1`1.<<ForEachAsync>b__1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<DeleteDirectory>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c.<<DeleteDirectory>b__19_1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c__DisplayClass13_1`1.<<ForEachAsync>b__1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<DeleteDirectory>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<LogIfThrows>d__42.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd(Task task)
+   at Squirrel.Update.Program.<Install>d__4.MoveNext()
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at Squirrel.Update.Program.executeCommandLine(String[] args)
+   at Squirrel.Update.Program.main(String[] args)
+---> (Inner Exception #0) System.IO.IOException: The process cannot access the file 'C:\Users\jeravels\AppData\Local\vysor\app-5.0.7\icudtl.dat' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalDelete(String path, Boolean checkHost)
+   at System.IO.File.Delete(String path)
+   at Squirrel.Utility.<>c.<DeleteDirectory>b__19_0(String file)
+   at Squirrel.Utility.<>c__DisplayClass12_1`1.<ForEachAsync>b__1()
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c__DisplayClass13_1`1.<<ForEachAsync>b__1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<DeleteDirectory>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c.<<DeleteDirectory>b__19_1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c__DisplayClass13_1`1.<<ForEachAsync>b__1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<DeleteDirectory>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<LogIfThrows>d__42.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd(Task task)
+   at Squirrel.Update.Program.<Install>d__4.MoveNext()<---
+
+2025-01-27 11:32:49> Program: Starting Squirrel Updater: --install .
+2025-01-27 11:32:49> Program: Starting install, writing to C:\Users\jeravels\AppData\Local\SquirrelTemp
+2025-01-27 11:32:49> Program: About to install to: C:\Users\jeravels\AppData\Local\vysor
+2025-01-27 11:32:49> Program: Install path C:\Users\jeravels\AppData\Local\vysor already exists, burning it to the ground
+2025-01-27 11:32:51> IEnableLogger: Failed to remove existing directory on full install, is the app still running???: System.UnauthorizedAccessException: Access to the path 'C:\Users\jeravels\AppData\Local\vysor\app-5.0.7\resources\app.asar.unpacked\native\win32\x64\vcruntime140.dll' is denied.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalDelete(String path, Boolean checkHost)
+   at System.IO.File.Delete(String path)
+   at Squirrel.Utility.<>c.<DeleteDirectory>b__19_0(String file)
+   at Squirrel.Utility.<>c__DisplayClass12_1`1.<ForEachAsync>b__1()
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c__DisplayClass13_1`1.<<ForEachAsync>b__1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<DeleteDirectory>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c.<<DeleteDirectory>b__19_1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c__DisplayClass13_1`1.<<ForEachAsync>b__1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<DeleteDirectory>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c.<<DeleteDirectory>b__19_1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c__DisplayClass13_1`1.<<ForEachAsync>b__1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<DeleteDirectory>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c.<<DeleteDirectory>b__19_1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c__DisplayClass13_1`1.<<ForEachAsync>b__1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<DeleteDirectory>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c.<<DeleteDirectory>b__19_1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c__DisplayClass13_1`1.<<ForEachAsync>b__1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<DeleteDirectory>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c.<<DeleteDirectory>b__19_1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c__DisplayClass13_1`1.<<ForEachAsync>b__1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<DeleteDirectory>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c.<<DeleteDirectory>b__19_1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c__DisplayClass13_1`1.<<ForEachAsync>b__1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<DeleteDirectory>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<LogIfThrows>d__42.MoveNext()
+2025-01-27 11:32:51> Unhandled exception: System.AggregateException: One or more errors occurred. ---> System.UnauthorizedAccessException: Access to the path 'C:\Users\jeravels\AppData\Local\vysor\app-5.0.7\resources\app.asar.unpacked\native\win32\x64\vcruntime140.dll' is denied.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalDelete(String path, Boolean checkHost)
+   at System.IO.File.Delete(String path)
+   at Squirrel.Utility.<>c.<DeleteDirectory>b__19_0(String file)
+   at Squirrel.Utility.<>c__DisplayClass12_1`1.<ForEachAsync>b__1()
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c__DisplayClass13_1`1.<<ForEachAsync>b__1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<DeleteDirectory>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c.<<DeleteDirectory>b__19_1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c__DisplayClass13_1`1.<<ForEachAsync>b__1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<DeleteDirectory>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c.<<DeleteDirectory>b__19_1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c__DisplayClass13_1`1.<<ForEachAsync>b__1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<DeleteDirectory>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c.<<DeleteDirectory>b__19_1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c__DisplayClass13_1`1.<<ForEachAsync>b__1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<DeleteDirectory>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c.<<DeleteDirectory>b__19_1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c__DisplayClass13_1`1.<<ForEachAsync>b__1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<DeleteDirectory>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c.<<DeleteDirectory>b__19_1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c__DisplayClass13_1`1.<<ForEachAsync>b__1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<DeleteDirectory>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c.<<DeleteDirectory>b__19_1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c__DisplayClass13_1`1.<<ForEachAsync>b__1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<DeleteDirectory>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<LogIfThrows>d__42.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd(Task task)
+   at Squirrel.Update.Program.<Install>d__4.MoveNext()
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at Squirrel.Update.Program.executeCommandLine(String[] args)
+   at Squirrel.Update.Program.main(String[] args)
+---> (Inner Exception #0) System.UnauthorizedAccessException: Access to the path 'C:\Users\jeravels\AppData\Local\vysor\app-5.0.7\resources\app.asar.unpacked\native\win32\x64\vcruntime140.dll' is denied.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalDelete(String path, Boolean checkHost)
+   at System.IO.File.Delete(String path)
+   at Squirrel.Utility.<>c.<DeleteDirectory>b__19_0(String file)
+   at Squirrel.Utility.<>c__DisplayClass12_1`1.<ForEachAsync>b__1()
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c__DisplayClass13_1`1.<<ForEachAsync>b__1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<DeleteDirectory>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c.<<DeleteDirectory>b__19_1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c__DisplayClass13_1`1.<<ForEachAsync>b__1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<DeleteDirectory>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c.<<DeleteDirectory>b__19_1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c__DisplayClass13_1`1.<<ForEachAsync>b__1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<DeleteDirectory>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c.<<DeleteDirectory>b__19_1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c__DisplayClass13_1`1.<<ForEachAsync>b__1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<DeleteDirectory>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c.<<DeleteDirectory>b__19_1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c__DisplayClass13_1`1.<<ForEachAsync>b__1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<DeleteDirectory>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c.<<DeleteDirectory>b__19_1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c__DisplayClass13_1`1.<<ForEachAsync>b__1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<DeleteDirectory>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c.<<DeleteDirectory>b__19_1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c__DisplayClass13_1`1.<<ForEachAsync>b__1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<DeleteDirectory>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<LogIfThrows>d__42.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd(Task task)
+   at Squirrel.Update.Program.<Install>d__4.MoveNext()<---
+
+2025-01-27 11:33:45> Program: Starting Squirrel Updater: --install .
+2025-01-27 11:33:45> Program: Starting install, writing to C:\Users\jeravels\AppData\Local\SquirrelTemp
+2025-01-27 11:33:45> Program: About to install to: C:\Users\jeravels\AppData\Local\vysor
+2025-01-27 11:33:45> Program: Install path C:\Users\jeravels\AppData\Local\vysor already exists, burning it to the ground
+2025-01-27 11:33:45> IEnableLogger: Failed to remove existing directory on full install, is the app still running???: System.UnauthorizedAccessException: Access to the path 'C:\Users\jeravels\AppData\Local\vysor\app-5.0.7\resources\app.asar.unpacked\native\win32\x64\vcruntime140.dll' is denied.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalDelete(String path, Boolean checkHost)
+   at System.IO.File.Delete(String path)
+   at Squirrel.Utility.<>c.<DeleteDirectory>b__19_0(String file)
+   at Squirrel.Utility.<>c__DisplayClass12_1`1.<ForEachAsync>b__1()
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c__DisplayClass13_1`1.<<ForEachAsync>b__1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<DeleteDirectory>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c.<<DeleteDirectory>b__19_1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c__DisplayClass13_1`1.<<ForEachAsync>b__1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<DeleteDirectory>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c.<<DeleteDirectory>b__19_1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c__DisplayClass13_1`1.<<ForEachAsync>b__1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<DeleteDirectory>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c.<<DeleteDirectory>b__19_1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c__DisplayClass13_1`1.<<ForEachAsync>b__1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<DeleteDirectory>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c.<<DeleteDirectory>b__19_1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c__DisplayClass13_1`1.<<ForEachAsync>b__1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<DeleteDirectory>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c.<<DeleteDirectory>b__19_1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c__DisplayClass13_1`1.<<ForEachAsync>b__1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<DeleteDirectory>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c.<<DeleteDirectory>b__19_1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c__DisplayClass13_1`1.<<ForEachAsync>b__1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<DeleteDirectory>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<LogIfThrows>d__42.MoveNext()
+2025-01-27 11:33:45> Unhandled exception: System.AggregateException: One or more errors occurred. ---> System.UnauthorizedAccessException: Access to the path 'C:\Users\jeravels\AppData\Local\vysor\app-5.0.7\resources\app.asar.unpacked\native\win32\x64\vcruntime140.dll' is denied.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalDelete(String path, Boolean checkHost)
+   at System.IO.File.Delete(String path)
+   at Squirrel.Utility.<>c.<DeleteDirectory>b__19_0(String file)
+   at Squirrel.Utility.<>c__DisplayClass12_1`1.<ForEachAsync>b__1()
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c__DisplayClass13_1`1.<<ForEachAsync>b__1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<DeleteDirectory>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c.<<DeleteDirectory>b__19_1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c__DisplayClass13_1`1.<<ForEachAsync>b__1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<DeleteDirectory>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c.<<DeleteDirectory>b__19_1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c__DisplayClass13_1`1.<<ForEachAsync>b__1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<DeleteDirectory>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c.<<DeleteDirectory>b__19_1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c__DisplayClass13_1`1.<<ForEachAsync>b__1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<DeleteDirectory>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c.<<DeleteDirectory>b__19_1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c__DisplayClass13_1`1.<<ForEachAsync>b__1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<DeleteDirectory>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c.<<DeleteDirectory>b__19_1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c__DisplayClass13_1`1.<<ForEachAsync>b__1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<DeleteDirectory>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c.<<DeleteDirectory>b__19_1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c__DisplayClass13_1`1.<<ForEachAsync>b__1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<DeleteDirectory>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<LogIfThrows>d__42.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd(Task task)
+   at Squirrel.Update.Program.<Install>d__4.MoveNext()
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at Squirrel.Update.Program.executeCommandLine(String[] args)
+   at Squirrel.Update.Program.main(String[] args)
+---> (Inner Exception #0) System.UnauthorizedAccessException: Access to the path 'C:\Users\jeravels\AppData\Local\vysor\app-5.0.7\resources\app.asar.unpacked\native\win32\x64\vcruntime140.dll' is denied.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalDelete(String path, Boolean checkHost)
+   at System.IO.File.Delete(String path)
+   at Squirrel.Utility.<>c.<DeleteDirectory>b__19_0(String file)
+   at Squirrel.Utility.<>c__DisplayClass12_1`1.<ForEachAsync>b__1()
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c__DisplayClass13_1`1.<<ForEachAsync>b__1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<DeleteDirectory>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c.<<DeleteDirectory>b__19_1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c__DisplayClass13_1`1.<<ForEachAsync>b__1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<DeleteDirectory>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c.<<DeleteDirectory>b__19_1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c__DisplayClass13_1`1.<<ForEachAsync>b__1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<DeleteDirectory>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c.<<DeleteDirectory>b__19_1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c__DisplayClass13_1`1.<<ForEachAsync>b__1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<DeleteDirectory>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c.<<DeleteDirectory>b__19_1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c__DisplayClass13_1`1.<<ForEachAsync>b__1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<DeleteDirectory>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c.<<DeleteDirectory>b__19_1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c__DisplayClass13_1`1.<<ForEachAsync>b__1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<DeleteDirectory>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c.<<DeleteDirectory>b__19_1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c__DisplayClass13_1`1.<<ForEachAsync>b__1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<DeleteDirectory>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<LogIfThrows>d__42.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd(Task task)
+   at Squirrel.Update.Program.<Install>d__4.MoveNext()<---
+
+2025-01-27 11:34:30> Program: Starting Squirrel Updater: --install .
+2025-01-27 11:34:30> Program: Starting install, writing to C:\Users\jeravels\AppData\Local\SquirrelTemp
+2025-01-27 11:34:30> Program: About to install to: C:\Users\jeravels\AppData\Local\vysor
+2025-01-27 11:34:30> Program: Install path C:\Users\jeravels\AppData\Local\vysor already exists, burning it to the ground
+2025-01-27 11:34:31> IEnableLogger: Failed to remove existing directory on full install, is the app still running???: System.UnauthorizedAccessException: Access to the path 'C:\Users\jeravels\AppData\Local\vysor\app-5.0.7\resources\app.asar.unpacked\native\win32\x64\vcruntime140.dll' is denied.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalDelete(String path, Boolean checkHost)
+   at System.IO.File.Delete(String path)
+   at Squirrel.Utility.<>c.<DeleteDirectory>b__19_0(String file)
+   at Squirrel.Utility.<>c__DisplayClass12_1`1.<ForEachAsync>b__1()
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c__DisplayClass13_1`1.<<ForEachAsync>b__1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<DeleteDirectory>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c.<<DeleteDirectory>b__19_1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c__DisplayClass13_1`1.<<ForEachAsync>b__1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<DeleteDirectory>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c.<<DeleteDirectory>b__19_1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c__DisplayClass13_1`1.<<ForEachAsync>b__1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<DeleteDirectory>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c.<<DeleteDirectory>b__19_1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c__DisplayClass13_1`1.<<ForEachAsync>b__1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<DeleteDirectory>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c.<<DeleteDirectory>b__19_1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c__DisplayClass13_1`1.<<ForEachAsync>b__1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<DeleteDirectory>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c.<<DeleteDirectory>b__19_1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c__DisplayClass13_1`1.<<ForEachAsync>b__1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<DeleteDirectory>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c.<<DeleteDirectory>b__19_1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c__DisplayClass13_1`1.<<ForEachAsync>b__1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<DeleteDirectory>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<LogIfThrows>d__42.MoveNext()
+2025-01-27 11:34:31> Unhandled exception: System.AggregateException: One or more errors occurred. ---> System.UnauthorizedAccessException: Access to the path 'C:\Users\jeravels\AppData\Local\vysor\app-5.0.7\resources\app.asar.unpacked\native\win32\x64\vcruntime140.dll' is denied.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalDelete(String path, Boolean checkHost)
+   at System.IO.File.Delete(String path)
+   at Squirrel.Utility.<>c.<DeleteDirectory>b__19_0(String file)
+   at Squirrel.Utility.<>c__DisplayClass12_1`1.<ForEachAsync>b__1()
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c__DisplayClass13_1`1.<<ForEachAsync>b__1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<DeleteDirectory>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c.<<DeleteDirectory>b__19_1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c__DisplayClass13_1`1.<<ForEachAsync>b__1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<DeleteDirectory>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c.<<DeleteDirectory>b__19_1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c__DisplayClass13_1`1.<<ForEachAsync>b__1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<DeleteDirectory>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c.<<DeleteDirectory>b__19_1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c__DisplayClass13_1`1.<<ForEachAsync>b__1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<DeleteDirectory>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c.<<DeleteDirectory>b__19_1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c__DisplayClass13_1`1.<<ForEachAsync>b__1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<DeleteDirectory>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c.<<DeleteDirectory>b__19_1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c__DisplayClass13_1`1.<<ForEachAsync>b__1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<DeleteDirectory>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c.<<DeleteDirectory>b__19_1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c__DisplayClass13_1`1.<<ForEachAsync>b__1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<DeleteDirectory>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<LogIfThrows>d__42.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd(Task task)
+   at Squirrel.Update.Program.<Install>d__4.MoveNext()
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at Squirrel.Update.Program.executeCommandLine(String[] args)
+   at Squirrel.Update.Program.main(String[] args)
+---> (Inner Exception #0) System.UnauthorizedAccessException: Access to the path 'C:\Users\jeravels\AppData\Local\vysor\app-5.0.7\resources\app.asar.unpacked\native\win32\x64\vcruntime140.dll' is denied.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalDelete(String path, Boolean checkHost)
+   at System.IO.File.Delete(String path)
+   at Squirrel.Utility.<>c.<DeleteDirectory>b__19_0(String file)
+   at Squirrel.Utility.<>c__DisplayClass12_1`1.<ForEachAsync>b__1()
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c__DisplayClass13_1`1.<<ForEachAsync>b__1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<DeleteDirectory>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c.<<DeleteDirectory>b__19_1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c__DisplayClass13_1`1.<<ForEachAsync>b__1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<DeleteDirectory>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c.<<DeleteDirectory>b__19_1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c__DisplayClass13_1`1.<<ForEachAsync>b__1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<DeleteDirectory>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c.<<DeleteDirectory>b__19_1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c__DisplayClass13_1`1.<<ForEachAsync>b__1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<DeleteDirectory>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c.<<DeleteDirectory>b__19_1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c__DisplayClass13_1`1.<<ForEachAsync>b__1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<DeleteDirectory>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c.<<DeleteDirectory>b__19_1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c__DisplayClass13_1`1.<<ForEachAsync>b__1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<DeleteDirectory>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c.<<DeleteDirectory>b__19_1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<>c__DisplayClass13_1`1.<<ForEachAsync>b__1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<DeleteDirectory>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<LogIfThrows>d__42.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd(Task task)
+   at Squirrel.Update.Program.<Install>d__4.MoveNext()<---
+
